@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/e3627645de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="mx-10 md:mx-[120px] my-5">
+    <!-- SVG shape behind the navbar -->
+
+    <header>
+      <div class="relative">
+        <nav class="md:flex md:items-center justify-between py-2">
+          <!-- Logo Section -->
+          <div class="flex items-center justify-between">
+            <div class="font-bold text-xl whitespace-nowrap">
+              <a href="#home">Made by Arnob &hearts;</a>
+            </div>
+            <span class="text-2xl cursor-pointer md:hidden block z-2"
+              ><ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+          <div class="">
+            <ul
+              class="bg-white md:flex text-sm md:gap-5 mr-5 font-bold w-full z-[1] md:z-auto md:static absolute left-0 md:w-auto py-4 md:py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:bg-transparent"
+              id="list"
+            >
+              <li
+                class="text-gray-700 hover:text-gray-900 hover:translate-y-[-5px] ease-in-out duration-300 transition-all mt-2 md:mt-0"
+              >
+                <a href="#home">Home</a>
+              </li>
+              <li
+                class="text-gray-700 hover:text-gray-900 hover:translate-y-[-5px] ease-in-out duration-300 transition-all mt-2 md:mt-0"
+              >
+                <a href="#projects">Projects</a>
+              </li>
+              <li
+                class="text-gray-700 hover:text-gray-900 hover:translate-y-[-5px] ease-in-out duration-300 transition-all mt-2 md:mt-0"
+              >
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="absolute top-0 right-0 z-[-1] opacity-0 md:opacity-100">
+          <img src="images/image.png" width="300px" alt=" flower girl" />
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="mt-5 max-w-[300px]" id="#home">
+      <h3 class="text-xl text-[#FDC435] font-bold">UI/UX Designer</h3>
+      <h1 class="text-3xl font-bold">Hello, my name is Selina Gomez</h1>
+      <p class="text-[#828282] mt-8">
+        Short text with details about you, what you do or your professional
+        career. You can add more information on the about page.
+      </p>
+      <!-- Buttons -->
+      <div class="mt-5">
+        <button
+          class="bg-yellow-300 hover:bg-yellow-400 text-sm px-8 py-2 rounded-md"
+        >
+          Projects
+        </button>
+        <button
+          class="border border-[#25282B] hover:bg-[#25282B] hover:text-white hover:font-bold text-gray-600 text-sm px-8 py-2 rounded-md ml-2"
+        >
+          Linkedin
+        </button>
+      </div>
+    </div>
+    <!-- Hero Section Ends -->
+    <!-- Project Section Starts -->
+    <div class="mt-[100px]">
+      <div class="flex items-center justify-center flex-col gap-1">
+        <h1 class="text-[30px] font-bold">Projects</h1>
+        <img src="images/Rectangle 19.svg"  width="80px" alt="bar" />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mt-[100px]">
+        <div class=" flex flex-col justify-center gap-5">
+          <h1 class="text-3xl font-bold">Project Name</h1>
+          <p>
+            I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.
+          </p>
+          <button class="text-[#25282B] border border-[#25282B] text-sm px-5 py-2 rounded-md w-[140px] hover:bg-[#25282B] hover:text-white hover:font-bold transition-all duration-200">View Project</button>
+        </div>
+        <div>
+          <img src="images/yoga girl.png" class="rounded-r-3xl" alt="Doing yoga" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <!-- Project 2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mt-[100px]">
+        <div>
+          <img src="images/notebook.png" class="rounded-l -3xl" alt="notebook" />
+        </div>
+        <div class=" flex flex-col justify-center gap-5">
+          <h1 class="text-3xl font-bold">Project Name</h1>
+          <p>
+            I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.
+          </p>
+          <button class="text-[#25282B] border border-[#25282B] text-sm px-5 py-2 rounded-md w-[140px] hover:bg-[#25282B] hover:text-white hover:font-bold transition-all duration-200">View Project</button>
+        </div>
+        <!-- Project-3 -->
+       
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mt-[100px]">
+        <div class=" flex flex-col justify-center gap-5">
+          <h1 class="text-3xl font-bold">Project Name</h1>
+          <p>
+            I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.
+          </p>
+          <button class="text-[#25282B] border border-[#25282B] text-sm px-5 py-2 rounded-md w-[140px] hover:bg-[#25282B] hover:text-white hover:font-bold transition-all duration-200">View Project</button>
+        </div>
+        <div>
+          <img src="images/smartphone.png" class="rounded-r-3xl" alt="Smartphone" />
+        </div>
+      </div>
+    
+    </div>
+    <footer>
+      <!-- icons -->
+      <div class="flex items-center justify-center mt-[150px] text-2xl gap-5">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div class="mt-[20px] text-gray-500 text-center flex items-center justify-center">Arnob mahmud, made with 
+        <span class="text-red-600 text-2xl">&hearts;</span></div>
+    </footer>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function Menu(e) {
+        let list = document.getElementById("list");
+
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[50px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
